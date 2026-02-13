@@ -1,12 +1,14 @@
-
+# reverse print
 name = "Hello"
 print(name[::-1])
 
+# even number
 lst = [1,2,3,4,5,6,7,8]
 for i in lst:
     if i%2==0:
         print(i)
 
+# data filtering
 data = [
     ["Riya", 22, 40000],
     ["Aman", 17, 20000],
@@ -20,17 +22,14 @@ def eligible(data):
         return valid
 result = print(eligible(data))
 
-for i in range(0,6):
-    if i>=3:
-        print(i)
-
-
+# addition 
 input =[1,2,3,4]
 sum = 0
 for i in input:
     sum+=i
     print(sum)
-    
+
+#swap two number use extra variable    
 a = 5
 b = 2
 c = a
@@ -38,35 +37,31 @@ a = b
 b = c
 print(a,b)
 
-
-lst = [10, 20, 30, 40]
-for i in lst:
-    if i >= 40:
-        print(i)
-
-        
+# while loop        
 i = 1
 while i<=10:
     print(i)
     i+=1
 
+#zip method 
 names ="A","B"
 salary = 20000,40000
 for n , s in zip(names,salary):
     print(n,s)
 
+#enumerate use for indexing list
 lst =["apple","banana","mango"]
 for index,name in enumerate(lst):
     print(index,name)
     
-
+# reverse string
 s = "python"
 rev = ""
 for i in s:
     rev = i+rev
 print(rev)
 
-
+# vowels counting
 s = "education"
 vowels ="aeiou"
 count = 0
@@ -75,29 +70,32 @@ for ch in s:
         count+=1
 print(count)
 
+#find a maximum number
 lst = [10, 20, 30, 40]
 max_num = lst[0]
-
 for i in lst:
     if i > max_num:
         max_num = i
-
 print(max_num)
 
+#square for list
 lst = [2, 4, 6, 8]
 square =(l*l for l in lst )
 for s in square:
     print(s)
 
+# square 
 square = (l*l for l in range(1,5))
 for s in square:
     print(s)
 
+# sum two number using function
 def sum(a,b):
     return a+b
 result = sum(200,300)
 print(result)
 
+#dictionary in for loop
 student = {
     "name": "Riya",
     "age": 22,
@@ -106,24 +104,29 @@ student = {
 for key,value in student.items():
     print(key,":",value)
 
+#nested loop
 for i in range(4):
     for j in range(5):
         print(i,j)
 
+#pattern print
 for i in range(1,6):
     for j in range(i):
         print("*",end="")
     print()
 
+# 1 table print 
 for i in range(1,2):
     for j in range(1,11):
         print(i,"*",j ,"=", i*j)
     print()
 
+#data type change tuple to list
 t=(10,20,30,40)
 lst = list(t)
 print(lst)
 
+#swap two numbers without any extra variable 
 a=3
 b=5
 a,b = b,a
